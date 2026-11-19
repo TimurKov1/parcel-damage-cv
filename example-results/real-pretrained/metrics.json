@@ -1,0 +1,64 @@
+{
+  "images": 42,
+  "capture_groups": 14,
+  "with_damage_annotation": 11,
+  "positive_fraction": 0.2619047619047619,
+  "test_counts_by_fold": [
+    {
+      "fold": 1,
+      "images": 12,
+      "with_damage_annotation": 3
+    },
+    {
+      "fold": 2,
+      "images": 9,
+      "with_damage_annotation": 3
+    },
+    {
+      "fold": 3,
+      "images": 9,
+      "with_damage_annotation": 2
+    },
+    {
+      "fold": 4,
+      "images": 12,
+      "with_damage_annotation": 3
+    }
+  ],
+  "models": {
+    "logistic": {
+      "out_of_fold_ap": 0.2704,
+      "out_of_fold_roc_auc": 0.4692,
+      "fold_ap": [
+        0.5556,
+        0.4429,
+        0.3929,
+        0.2205
+      ]
+    },
+    "extra_trees": {
+      "out_of_fold_ap": 0.3451,
+      "out_of_fold_roc_auc": 0.6041,
+      "fold_ap": [
+        0.6111,
+        0.6389,
+        0.6111,
+        0.3694
+      ]
+    },
+    "mobilenet_v3_small": {
+      "out_of_fold_ap": 0.9294,
+      "out_of_fold_roc_auc": 0.9267,
+      "fold_ap": [
+        1.0,
+        0.9167,
+        0.6429,
+        1.0
+      ]
+    },
+    "synthetic_baseline": {
+      "ap": 0.2517,
+      "roc_auc": 0.4721
+    }
+  }
+}
