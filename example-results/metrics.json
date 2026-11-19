@@ -1,0 +1,159 @@
+{
+  "source": "synthetic",
+  "photos": 300,
+  "boxes_by_split": {
+    "train": 90,
+    "validation": 30,
+    "test": 30
+  },
+  "quality_photo_ap": 0.9882,
+  "model_comparison": {
+    "logistic": {
+      "damage_photo_ap": 0.9285,
+      "validation_curve": [
+        {
+          "low": 0.1,
+          "high": 0.9,
+          "claims": 30,
+          "damaged_claims": 17,
+          "review_or_more_photos": 14,
+          "automatic_coverage": 0.5333,
+          "detected_damage": 9,
+          "missed_damage": 0,
+          "false_damage": 2
+        },
+        {
+          "low": 0.2,
+          "high": 0.8,
+          "claims": 30,
+          "damaged_claims": 17,
+          "review_or_more_photos": 11,
+          "automatic_coverage": 0.6333,
+          "detected_damage": 11,
+          "missed_damage": 0,
+          "false_damage": 2
+        },
+        {
+          "low": 0.3,
+          "high": 0.7,
+          "claims": 30,
+          "damaged_claims": 17,
+          "review_or_more_photos": 11,
+          "automatic_coverage": 0.6333,
+          "detected_damage": 11,
+          "missed_damage": 0,
+          "false_damage": 2
+        },
+        {
+          "low": 0.4,
+          "high": 0.6,
+          "claims": 30,
+          "damaged_claims": 17,
+          "review_or_more_photos": 11,
+          "automatic_coverage": 0.6333,
+          "detected_damage": 11,
+          "missed_damage": 0,
+          "false_damage": 2
+        },
+        {
+          "low": 0.5,
+          "high": 0.5,
+          "claims": 30,
+          "damaged_claims": 17,
+          "review_or_more_photos": 11,
+          "automatic_coverage": 0.6333,
+          "detected_damage": 11,
+          "missed_damage": 0,
+          "false_damage": 2
+        }
+      ]
+    },
+    "extra_trees": {
+      "damage_photo_ap": 0.8484,
+      "validation_curve": [
+        {
+          "low": 0.1,
+          "high": 0.9,
+          "claims": 30,
+          "damaged_claims": 17,
+          "review_or_more_photos": 30,
+          "automatic_coverage": 0.0,
+          "detected_damage": 0,
+          "missed_damage": 0,
+          "false_damage": 0
+        },
+        {
+          "low": 0.2,
+          "high": 0.8,
+          "claims": 30,
+          "damaged_claims": 17,
+          "review_or_more_photos": 28,
+          "automatic_coverage": 0.0667,
+          "detected_damage": 0,
+          "missed_damage": 0,
+          "false_damage": 0
+        },
+        {
+          "low": 0.3,
+          "high": 0.7,
+          "claims": 30,
+          "damaged_claims": 17,
+          "review_or_more_photos": 28,
+          "automatic_coverage": 0.0667,
+          "detected_damage": 0,
+          "missed_damage": 0,
+          "false_damage": 0
+        },
+        {
+          "low": 0.4,
+          "high": 0.6,
+          "claims": 30,
+          "damaged_claims": 17,
+          "review_or_more_photos": 21,
+          "automatic_coverage": 0.3,
+          "detected_damage": 2,
+          "missed_damage": 1,
+          "false_damage": 0
+        },
+        {
+          "low": 0.5,
+          "high": 0.5,
+          "claims": 30,
+          "damaged_claims": 17,
+          "review_or_more_photos": 12,
+          "automatic_coverage": 0.6,
+          "detected_damage": 7,
+          "missed_damage": 3,
+          "false_damage": 1
+        }
+      ]
+    }
+  },
+  "selected_model": "logistic",
+  "low": 0.2,
+  "high": 0.8,
+  "validation_cost": 17,
+  "cost_weights": {
+    "missed_damage": 5,
+    "false_damage": 3,
+    "review_or_more_photos": 1
+  },
+  "test_all_photos": {
+    "claims": 30,
+    "damaged_claims": 13,
+    "review_or_more_photos": 16,
+    "automatic_coverage": 0.4667,
+    "detected_damage": 5,
+    "missed_damage": 1,
+    "false_damage": 0
+  },
+  "test_first_photo": {
+    "claims": 30,
+    "damaged_claims": 13,
+    "review_or_more_photos": 28,
+    "automatic_coverage": 0.0667,
+    "detected_damage": 2,
+    "missed_damage": 0,
+    "false_damage": 0
+  }
+}

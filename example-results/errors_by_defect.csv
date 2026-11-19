@@ -1,0 +1,12 @@
+defect,route,claims,missed_damage,false_damage
+dent,manual_review,2,0,0
+dent,more_photos,1,0,0
+dent,no_visible_damage,1,1,0
+none,manual_review,1,0,0
+none,more_photos,8,0,0
+none,no_visible_damage,8,0,0
+puncture,more_photos,1,0,0
+puncture,visible_damage,2,0,0
+tear,manual_review,2,0,0
+tear,more_photos,1,0,0
+tear,visible_damage,3,0,0
