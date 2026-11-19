@@ -1,0 +1,77 @@
+{
+  "development_images": 132,
+  "holdout_images": 24,
+  "holdout_positive": 9,
+  "selected_learned_variant": "learned_box",
+  "models": {
+    "full": {
+      "development_mean_ap": 0.48006503098570524,
+      "holdout": {
+        "ap": 0.49277954438137506,
+        "roc_auc": 0.4296296296296296
+      }
+    },
+    "manual_box": {
+      "development_mean_ap": 0.36071449514506815,
+      "holdout": {
+        "ap": 0.6321445610919295,
+        "roc_auc": 0.674074074074074
+      }
+    },
+    "color_box": {
+      "development_mean_ap": 0.3906596821879331,
+      "holdout": {
+        "ap": 0.5415965207631874,
+        "roc_auc": 0.6,
+        "mean_iou": 0.6492660567729437,
+        "iou_at_least_50": 17,
+        "fallback_to_full": 0
+      },
+      "development_mean_iou": 0.5875440284152064
+    },
+    "learned_box": {
+      "development_mean_ap": 0.42242667100003917,
+      "holdout": {
+        "ap": 0.49776695575255275,
+        "roc_auc": 0.44444444444444453,
+        "mean_iou": 0.7218113077580508,
+        "iou_at_least_50": 24,
+        "fallback_to_full": 0
+      },
+      "development_mean_iou": 0.660994904915
+    },
+    "learned_box_jitter": {
+      "development_mean_ap": 0.3585856426675026,
+      "holdout": {
+        "ap": 0.6829563753476797,
+        "roc_auc": 0.6592592592592592,
+        "mean_iou": 0.7218113077580508,
+        "iou_at_least_50": 24,
+        "fallback_to_full": 0
+      },
+      "development_mean_iou": 0.660994904915
+    },
+    "mobilenet_color_box": {
+      "development_mean_ap": 0.37687788365632724,
+      "holdout": {
+        "ap": 0.5360530957022185,
+        "roc_auc": 0.6518518518518519,
+        "mean_iou": 0.6492660567729437,
+        "iou_at_least_50": 17,
+        "fallback_to_full": 0
+      },
+      "development_mean_iou": 0.5875440284152064
+    },
+    "mobilenet_learned_box": {
+      "development_mean_ap": 0.4316911032453712,
+      "holdout": {
+        "ap": 0.7972663139329805,
+        "roc_auc": 0.8666666666666667,
+        "mean_iou": 0.7218113077580508,
+        "iou_at_least_50": 24,
+        "fallback_to_full": 0
+      },
+      "development_mean_iou": 0.660994904915
+    }
+  }
+}
