@@ -1,0 +1,358 @@
+{
+  "development": {
+    "images": 132,
+    "groups": 44,
+    "positive": 47
+  },
+  "holdout": {
+    "images": 24,
+    "groups": 8,
+    "positive": 9
+  },
+  "size_slices": {
+    "small_defect_area_fraction_below": 0.03,
+    "small_defects": 7,
+    "other_defects": 2
+  },
+  "selected_on_development": "logistic_full",
+  "selected_holdout_ap_group_bootstrap_95": [
+    0.24608560370788635,
+    0.6693056431872221
+  ],
+  "tile_localization": {
+    "top_tile_matches_defect": 5,
+    "positive_holdout_photos": 9
+  },
+  "models": {
+    "logistic_full": {
+      "development_folds": [
+        {
+          "ap": 0.46561377076082955,
+          "roc_auc": 0.5082644628099173
+        },
+        {
+          "ap": 0.45587051959917235,
+          "roc_auc": 0.48461538461538467
+        },
+        {
+          "ap": 0.46276568826657416,
+          "roc_auc": 0.5867768595041323
+        },
+        {
+          "ap": 0.6261344750928085,
+          "roc_auc": 0.6111111111111112
+        }
+      ],
+      "development_mean_ap": 0.5025961134298461,
+      "holdout": {
+        "ap": 0.43312289562289563,
+        "roc_auc": 0.4962962962962963
+      },
+      "review_top_half": {
+        "reviewed": 12,
+        "small_defects_found": 4,
+        "other_defects_found": 1
+      }
+    },
+    "extra_trees_full": {
+      "development_folds": [
+        {
+          "ap": 0.32629766982772845,
+          "roc_auc": 0.4380165289256198
+        },
+        {
+          "ap": 0.3681246642686704,
+          "roc_auc": 0.41923076923076924
+        },
+        {
+          "ap": 0.34538653131657765,
+          "roc_auc": 0.4628099173553719
+        },
+        {
+          "ap": 0.5530364201383471,
+          "roc_auc": 0.6111111111111112
+        }
+      ],
+      "development_mean_ap": 0.3982113213878309,
+      "holdout": {
+        "ap": 0.35825579649109063,
+        "roc_auc": 0.4444444444444444
+      },
+      "review_top_half": {
+        "reviewed": 12,
+        "small_defects_found": 2,
+        "other_defects_found": 2
+      }
+    },
+    "extra_trees_crop": {
+      "development_folds": [
+        {
+          "ap": 0.24239221205601869,
+          "roc_auc": 0.23966942148760328
+        },
+        {
+          "ap": 0.3879765747073439,
+          "roc_auc": 0.44999999999999996
+        },
+        {
+          "ap": 0.6047655701399017,
+          "roc_auc": 0.6487603305785125
+        },
+        {
+          "ap": 0.39243661116392514,
+          "roc_auc": 0.511904761904762
+        }
+      ],
+      "development_mean_ap": 0.40689274201679737,
+      "holdout": {
+        "ap": 0.31732098416881027,
+        "roc_auc": 0.29629629629629634
+      },
+      "review_top_half": {
+        "reviewed": 12,
+        "small_defects_found": 1,
+        "other_defects_found": 2
+      }
+    },
+    "svm_hog_full": {
+      "development_folds": [
+        {
+          "ap": 0.3771976629211409,
+          "roc_auc": 0.39669421487603307
+        },
+        {
+          "ap": 0.5245523370017298,
+          "roc_auc": 0.6307692307692307
+        },
+        {
+          "ap": 0.5042662143348642,
+          "roc_auc": 0.6776859504132231
+        },
+        {
+          "ap": 0.5142439096850862,
+          "roc_auc": 0.6547619047619048
+        }
+      ],
+      "development_mean_ap": 0.48006503098570524,
+      "holdout": {
+        "ap": 0.49277954438137506,
+        "roc_auc": 0.4296296296296296
+      },
+      "review_top_half": {
+        "reviewed": 12,
+        "small_defects_found": 3,
+        "other_defects_found": 1
+      }
+    },
+    "svm_hog_crop": {
+      "development_folds": [
+        {
+          "ap": 0.28662600108306896,
+          "roc_auc": 0.2892561983471074
+        },
+        {
+          "ap": 0.5138866211446858,
+          "roc_auc": 0.48846153846153845
+        },
+        {
+          "ap": 0.3160319752711057,
+          "roc_auc": 0.44628099173553726
+        },
+        {
+          "ap": 0.3263133830814121,
+          "roc_auc": 0.4047619047619048
+        }
+      ],
+      "development_mean_ap": 0.36071449514506815,
+      "holdout": {
+        "ap": 0.6321445610919295,
+        "roc_auc": 0.674074074074074
+      },
+      "review_top_half": {
+        "reviewed": 12,
+        "small_defects_found": 4,
+        "other_defects_found": 1
+      }
+    },
+    "extra_trees_local_crop": {
+      "development_folds": [
+        {
+          "ap": 0.39312628068250255,
+          "roc_auc": 0.5
+        },
+        {
+          "ap": 0.47071600895293886,
+          "roc_auc": 0.423076923076923
+        },
+        {
+          "ap": 0.5063463583200426,
+          "roc_auc": 0.5991735537190083
+        },
+        {
+          "ap": 0.4200907301922318,
+          "roc_auc": 0.4444444444444445
+        }
+      ],
+      "development_mean_ap": 0.447569844536929,
+      "holdout": {
+        "ap": 0.35390388478623774,
+        "roc_auc": 0.3555555555555555
+      },
+      "review_top_half": {
+        "reviewed": 12,
+        "small_defects_found": 2,
+        "other_defects_found": 1
+      }
+    },
+    "supervised_tiles_crop": {
+      "development_folds": [
+        {
+          "ap": 0.4801932691778733,
+          "roc_auc": 0.5289256198347108
+        },
+        {
+          "ap": 0.4020464954523659,
+          "roc_auc": 0.5076923076923077
+        },
+        {
+          "ap": 0.41228902676271095,
+          "roc_auc": 0.5289256198347108
+        },
+        {
+          "ap": 0.3349876204042871,
+          "roc_auc": 0.40079365079365076
+        }
+      ],
+      "development_mean_ap": 0.40737910294930935,
+      "holdout": {
+        "ap": 0.289447955637887,
+        "roc_auc": 0.24444444444444444
+      },
+      "review_top_half": {
+        "reviewed": 12,
+        "small_defects_found": 3,
+        "other_defects_found": 0
+      }
+    },
+    "cnn_crop": {
+      "development_folds": [
+        {
+          "ap": 0.31154738017476435,
+          "roc_auc": 0.4132231404958678
+        },
+        {
+          "ap": 0.49480710952811646,
+          "roc_auc": 0.48076923076923084
+        },
+        {
+          "ap": 0.43423337032782305,
+          "roc_auc": 0.5495867768595042
+        },
+        {
+          "ap": 0.4032209734677301,
+          "roc_auc": 0.4642857142857143
+        }
+      ],
+      "development_mean_ap": 0.4109522083746085,
+      "holdout": {
+        "ap": 0.3546253855077385,
+        "roc_auc": 0.37037037037037035
+      },
+      "review_top_half": {
+        "reviewed": 12,
+        "small_defects_found": 3,
+        "other_defects_found": 1
+      }
+    },
+    "mobilenet_full": {
+      "development_folds": [
+        {
+          "ap": 0.3735282147046853,
+          "roc_auc": 0.5082644628099173
+        },
+        {
+          "ap": 0.407518877859669,
+          "roc_auc": 0.5076923076923077
+        },
+        {
+          "ap": 0.46376790825490466,
+          "roc_auc": 0.5785123966942148
+        },
+        {
+          "ap": 0.4904635935549914,
+          "roc_auc": 0.5992063492063492
+        }
+      ],
+      "development_mean_ap": 0.4338196485935626,
+      "holdout": {
+        "ap": 0.5310370270661022,
+        "roc_auc": 0.5555555555555556
+      },
+      "review_top_half": {
+        "reviewed": 12,
+        "small_defects_found": 4,
+        "other_defects_found": 1
+      }
+    },
+    "mobilenet_crop": {
+      "development_folds": [
+        {
+          "ap": 0.3230217357108347,
+          "roc_auc": 0.4132231404958678
+        },
+        {
+          "ap": 0.3992628732085808,
+          "roc_auc": 0.5153846153846153
+        },
+        {
+          "ap": 0.43814377962105233,
+          "roc_auc": 0.5867768595041323
+        },
+        {
+          "ap": 0.38337976823078307,
+          "roc_auc": 0.5396825396825397
+        }
+      ],
+      "development_mean_ap": 0.38595203919281273,
+      "holdout": {
+        "ap": 0.8384319384319383,
+        "roc_auc": 0.8740740740740741
+      },
+      "review_top_half": {
+        "reviewed": 12,
+        "small_defects_found": 6,
+        "other_defects_found": 2
+      }
+    },
+    "logistic_background_only": {
+      "development_folds": [
+        {
+          "ap": 0.31379686302533194,
+          "roc_auc": 0.38016528925619836
+        },
+        {
+          "ap": 0.4708494608477077,
+          "roc_auc": 0.4307692307692308
+        },
+        {
+          "ap": 0.4128097298675586,
+          "roc_auc": 0.4793388429752066
+        },
+        {
+          "ap": 0.3316571675917027,
+          "roc_auc": 0.4444444444444444
+        }
+      ],
+      "development_mean_ap": 0.3822783053330753,
+      "holdout": {
+        "ap": 0.33201523565300656,
+        "roc_auc": 0.36296296296296293
+      },
+      "review_top_half": {
+        "reviewed": 12,
+        "small_defects_found": 2,
+        "other_defects_found": 1
+      }
+    }
+  }
+}
